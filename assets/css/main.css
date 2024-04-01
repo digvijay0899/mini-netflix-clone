@@ -1,0 +1,301 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #fff;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 22px;
+}
+
+h5 {
+  font-size: 20px;
+}
+
+h6 {
+  font-size: 18px;
+}
+
+button {
+  cursor: pointer;
+}
+
+.red-btn {
+  background: rgb(229, 9, 20);
+}
+
+.card-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+.card-col3 {
+  flex: 0 0 auto;
+  width: 33.33%;
+  padding: 0 15px;
+  margin-bottom: 20px;
+}
+
+.padding-blkbg {
+  padding: 40px 0 0 0;
+  background: #353535;
+}
+
+.pb-40 {
+  padding-bottom: 40px;
+}
+
+.pb-30 {
+  padding-bottom: 30px;
+}
+
+.pt-40 {
+  padding-top: 40px;
+}
+
+.d-space-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.d-jc-start {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.container {
+  max-width: 1164px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.hero-section {
+  position: relative;
+}
+.hero-section img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  object-position: center;
+}
+.hero-section header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 30px;
+  max-width: 1164px;
+  width: 100%;
+  margin: 0 auto;
+  z-index: 1;
+}
+.hero-section header .logo-section svg {
+  width: 148px;
+  fill: red;
+}
+.hero-section header ul li .red-btn {
+  min-height: 40px;
+  padding: 5px;
+  color: rgb(255, 255, 255);
+  border: 0;
+  width: 85px;
+  font-size: 14px;
+}
+.hero-section .overlay {
+  position: absolute;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+.hero-section .hero-text {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+.hero-section .hero-text h1 {
+  font-size: 60px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.hero-section .hero-text span {
+  color: #fff;
+  font-size: 20px;
+  margin-bottom: 20px;
+  display: block;
+}
+.hero-section .hero-text .gt-start {
+  border: 0;
+  width: 110px;
+  height: 45px;
+  display: block;
+  margin: 0 auto;
+  color: #fff;
+  font-size: 14px;
+}
+
+.card-row .inner-card {
+  position: relative;
+  height: 300px;
+}
+.card-row .inner-card i img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+.card-row .inner-card:hover .movie-info-overlay {
+  opacity: 1;
+  transition: all ease 0.9s;
+  cursor: pointer;
+}
+.card-row .inner-card .movie-info-overlay {
+  opacity: 0;
+  position: absolute;
+  transition: all ease 0.9s;
+  background-color: rgba(255, 255, 255, 0.2);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card-row .inner-card .movie-info-overlay p {
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+}
+
+footer {
+  border-top: 10px solid #504a4a;
+  color: #fff;
+}
+
+.movie-detail-section {
+  position: absolute;
+  top: 15%;
+  z-index: 1;
+  width: 500px;
+}
+.movie-detail-section > figure img {
+  margin: 0 20px 0 0;
+  width: 33px;
+  height: 54px;
+  object-fit: contain;
+}
+.movie-detail-section > figure figcaption {
+  font-size: 26px;
+  color: #fff;
+  text-transform: capitalize;
+}
+.movie-detail-section .info {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.movie-detail-section .info li {
+  padding: 0 15px;
+  border-right: 2px solid #fff;
+}
+.movie-detail-section .info li:first-of-type {
+  padding-left: 0;
+}
+.movie-detail-section .info li:last-of-type {
+  border-right: 0;
+  padding-right: 0;
+}
+.movie-detail-section .decription {
+  margin-bottom: 15px;
+}
+.movie-detail-section .decription p {
+  font-size: 18px;
+  color: #fff;
+  line-height: normal;
+}
+.movie-detail-section .decription h5 {
+  color: #e60000;
+  margin-bottom: 5px;
+}
+.loader-wrapper .loader-overlay {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.6);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+}
+.loader-wrapper .loader-logo {
+  position: fixed;
+  z-index: 100;
+  transform: translateY(-50%);
+  top: 50%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 150px;
+  margin: 0 auto;
+  height: 40px;
+}
